@@ -1,0 +1,2 @@
+ifconfig | sed -n '/en0:/,/status/p' | grep "broadcast" | sed 's/.*broadcast //'
+ifconfig | grep "netmask" | sed 's/.*inet //' | sed 's/ netmask.*//'

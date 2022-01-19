@@ -1,1 +1,1 @@
-ifconfig | grep ": flags" | sed 's/:.*//g'
+ifconfig -l

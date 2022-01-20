@@ -1,1 +1,2 @@
+#!/bin/sh
 dig who.int +short

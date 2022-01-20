@@ -1,1 +1,2 @@
+#!/bin/sh
 route get default | grep "gateway" | sed 's/.*gateway: //'

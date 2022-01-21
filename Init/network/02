@@ -4,4 +4,4 @@ broadcast=$(ifconfig $ethernet | awk '/broadcast/' | sed 's/.*broadcast //')
 echo $broadcast
 subnet=$(sed 's/.\.*...255$//g' <<< $broadcast)
 ping $broadcast | arp -a | sed -n
-ping $broadcast | arp -a | grep $subnet | sed 's/.*(//' | sed 's/).*//'
+arp -a | grep $subnet | sed 's/.*(//' | sed 's/).*//'

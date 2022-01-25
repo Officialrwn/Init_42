@@ -1,6 +1,6 @@
 1. After adding a new user then you need to set the user password with
 sudo passwd username 
-and then type su - username and enter password at prompt.
+and then type su - username and enter password at prompt to connect to that user.
 
-2. Press the power button and click on username label and then on "switch user" if the option
-does not exist then logout current user and select another user in the login screen.
+2. su - <username>
+and insert password.

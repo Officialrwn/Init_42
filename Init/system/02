@@ -1,1 +1,1 @@
-sudo hostname <new_hostname>
+sudo hostnamectl set-hostname leotran

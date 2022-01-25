@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo userdel -rf
+sudo userdel -rf `whoami`

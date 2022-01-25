@@ -1,2 +1,2 @@
 #!/bin/sh
-dig who.int +short
+nslookup who.int

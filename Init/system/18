@@ -1,1 +1,1 @@
-killall ssh
+sudo pkill ssh

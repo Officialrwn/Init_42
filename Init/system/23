@@ -1,6 +1,5 @@
-1. After adding a new user then you need to set the user password with
-sudo passwd username 
-and then type su - username and enter password at prompt to connect to that user.
+1. Open VM insert new user login and password or
+if VM is already open then type logout first.
 
-2. su - <username>
-and insert password.
+2. Type ssh <new_username>@<ip address> -p <port> on host machine.
+

@@ -1,3 +1,2 @@
-#!/bin/sh
 wifi=$(networksetup -listallhardwareports | awk '/Hardware Port: Wi-Fi/{getline;print}' | awk '{print $2}')
 ifconfig $wifi | awk '/ether/{print $2}'

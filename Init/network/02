@@ -1,4 +1,3 @@
-#!/bin/sh
 ethernet=$(networksetup -listallhardwareports | awk '/Hardware Port: Ethernet/{getline;print}' | awk '{print $2}')
 broadcast=$(ifconfig $ethernet | awk '/broadcast/' | sed 's/.*broadcast //')
 echo $broadcast

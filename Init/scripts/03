@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 printf "Type 1 or 2 and hit enter\n1) Add new user\n2) Exit\n"
 read input
 if ! [[ $input == 1 || $input == 2 ]]
